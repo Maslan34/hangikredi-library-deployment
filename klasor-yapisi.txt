@@ -1,0 +1,986 @@
+Folder PATH listing
+Volume serial number is 0293-73F3
+C:.
+|   .dockerignore
+|   .gitignore
+|   aci-compose.yaml
+|   docker-compose.dcproj
+|   docker-compose.override.yml
+|   docker-compose.yml
+|   HangiKrediDeployment.sln
+|   klasor-yapisi.txt
+|   launchSettings.json
+|   README.md
+|   
++---bin
+|   \---Debug
+|           appsettings.Development.json
+|           appsettings.json
+|           Confluent.Kafka.dll
+|           Elasticsearch.Net.dll
+|           Library.deps.json
+|           Library.dll
+|           Library.exe
+|           Library.pdb
+|           Library.runtimeconfig.json
+|           Library.staticwebassets.endpoints.json
+|           Library.staticwebassets.runtime.json
+|           Microsoft.EntityFrameworkCore.Abstractions.dll
+|           Microsoft.EntityFrameworkCore.dll
+|           Microsoft.EntityFrameworkCore.Relational.dll
+|           Microsoft.Extensions.Caching.Abstractions.dll
+|           Microsoft.Extensions.Caching.Memory.dll
+|           Microsoft.Extensions.Configuration.Abstractions.dll
+|           Microsoft.Extensions.DependencyInjection.Abstractions.dll
+|           Microsoft.Extensions.DependencyInjection.dll
+|           Microsoft.Extensions.Logging.Abstractions.dll
+|           Microsoft.Extensions.Logging.dll
+|           Microsoft.Extensions.Options.dll
+|           Microsoft.Extensions.Primitives.dll
+|           Nest.dll
+|           Npgsql.dll
+|           Npgsql.EntityFrameworkCore.PostgreSQL.dll
+|           
++---Library
+|   |   appsettings.Development.json
+|   |   appsettings.json
+|   |   Dockerfile
+|   |   Library.csproj
+|   |   Library.csproj.user
+|   |   Program.cs
+|   |   
+|   +---bin
+|   |   +---Debug
+|   |   |   \---net9.0
+|   |   |       |   appsettings.Development.json
+|   |   |       |   appsettings.json
+|   |   |       |   Confluent.Kafka.dll
+|   |   |       |   Elasticsearch.Net.dll
+|   |   |       |   Humanizer.dll
+|   |   |       |   Library.deps.json
+|   |   |       |   Library.dll
+|   |   |       |   Library.exe
+|   |   |       |   Library.pdb
+|   |   |       |   Library.runtimeconfig.json
+|   |   |       |   Library.staticwebassets.endpoints.json
+|   |   |       |   Library.staticwebassets.runtime.DT.json
+|   |   |       |   Library.staticwebassets.runtime.json
+|   |   |       |   Microsoft.Bcl.AsyncInterfaces.dll
+|   |   |       |   Microsoft.Build.Locator.dll
+|   |   |       |   Microsoft.CodeAnalysis.CSharp.dll
+|   |   |       |   Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+|   |   |       |   Microsoft.CodeAnalysis.dll
+|   |   |       |   Microsoft.CodeAnalysis.Workspaces.dll
+|   |   |       |   Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+|   |   |       |   Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+|   |   |       |   Microsoft.EntityFrameworkCore.Abstractions.dll
+|   |   |       |   Microsoft.EntityFrameworkCore.Design.dll
+|   |   |       |   Microsoft.EntityFrameworkCore.dll
+|   |   |       |   Microsoft.EntityFrameworkCore.Relational.dll
+|   |   |       |   Microsoft.Extensions.Caching.Abstractions.dll
+|   |   |       |   Microsoft.Extensions.Caching.Memory.dll
+|   |   |       |   Microsoft.Extensions.Configuration.Abstractions.dll
+|   |   |       |   Microsoft.Extensions.DependencyInjection.Abstractions.dll
+|   |   |       |   Microsoft.Extensions.DependencyInjection.dll
+|   |   |       |   Microsoft.Extensions.DependencyModel.dll
+|   |   |       |   Microsoft.Extensions.Logging.Abstractions.dll
+|   |   |       |   Microsoft.Extensions.Logging.dll
+|   |   |       |   Microsoft.Extensions.Options.dll
+|   |   |       |   Microsoft.Extensions.Primitives.dll
+|   |   |       |   Mono.TextTemplating.dll
+|   |   |       |   Nest.dll
+|   |   |       |   Npgsql.dll
+|   |   |       |   Npgsql.EntityFrameworkCore.PostgreSQL.dll
+|   |   |       |   System.CodeDom.dll
+|   |   |       |   System.Composition.AttributedModel.dll
+|   |   |       |   System.Composition.Convention.dll
+|   |   |       |   System.Composition.Hosting.dll
+|   |   |       |   System.Composition.Runtime.dll
+|   |   |       |   System.Composition.TypedParts.dll
+|   |   |       |   
+|   |   |       +---cs
+|   |   |       |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |   |       |       
+|   |   |       +---de
+|   |   |       |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |   |       |       
+|   |   |       +---es
+|   |   |       |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |   |       |       
+|   |   |       +---fr
+|   |   |       |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |   |       |       
+|   |   |       +---it
+|   |   |       |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |   |       |       
+|   |   |       +---ja
+|   |   |       |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |   |       |       
+|   |   |       +---ko
+|   |   |       |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |   |       |       
+|   |   |       +---pl
+|   |   |       |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |   |       |       
+|   |   |       +---pt-BR
+|   |   |       |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |   |       |       
+|   |   |       +---ru
+|   |   |       |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |   |       |       
+|   |   |       +---runtimes
+|   |   |       |   +---linux-arm64
+|   |   |       |   |   \---native
+|   |   |       |   |           librdkafka.so
+|   |   |       |   |           
+|   |   |       |   +---linux-x64
+|   |   |       |   |   \---native
+|   |   |       |   |           alpine-librdkafka.so
+|   |   |       |   |           centos8-librdkafka.so
+|   |   |       |   |           librdkafka.so
+|   |   |       |   |           
+|   |   |       |   +---osx-arm64
+|   |   |       |   |   \---native
+|   |   |       |   |           librdkafka.dylib
+|   |   |       |   |           
+|   |   |       |   +---osx-x64
+|   |   |       |   |   \---native
+|   |   |       |   |           librdkafka.dylib
+|   |   |       |   |           
+|   |   |       |   +---win-x64
+|   |   |       |   |   \---native
+|   |   |       |   |           libcrypto-3-x64.dll
+|   |   |       |   |           libcurl.dll
+|   |   |       |   |           librdkafka.dll
+|   |   |       |   |           librdkafkacpp.dll
+|   |   |       |   |           libssl-3-x64.dll
+|   |   |       |   |           msvcp140.dll
+|   |   |       |   |           vcruntime140.dll
+|   |   |       |   |           zlib1.dll
+|   |   |       |   |           zstd.dll
+|   |   |       |   |           
+|   |   |       |   \---win-x86
+|   |   |       |       \---native
+|   |   |       |               libcrypto-3.dll
+|   |   |       |               libcurl.dll
+|   |   |       |               librdkafka.dll
+|   |   |       |               librdkafkacpp.dll
+|   |   |       |               libssl-3.dll
+|   |   |       |               msvcp140.dll
+|   |   |       |               vcruntime140.dll
+|   |   |       |               zlib1.dll
+|   |   |       |               zstd.dll
+|   |   |       |               
+|   |   |       +---tr
+|   |   |       |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |   |       |       
+|   |   |       +---zh-Hans
+|   |   |       |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |   |       |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |   |       |       
+|   |   |       \---zh-Hant
+|   |   |               Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |   |               Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |   |               Microsoft.CodeAnalysis.resources.dll
+|   |   |               Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |   |               Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |   |               
+|   |   \---Release
+|   |       \---net9.0
+|   |           |   appsettings.Development.json
+|   |           |   appsettings.json
+|   |           |   Confluent.Kafka.dll
+|   |           |   Elasticsearch.Net.dll
+|   |           |   Humanizer.dll
+|   |           |   Library.deps.json
+|   |           |   Library.dll
+|   |           |   Library.exe
+|   |           |   Library.pdb
+|   |           |   Library.runtimeconfig.json
+|   |           |   Library.staticwebassets.endpoints.json
+|   |           |   Library.staticwebassets.runtime.json
+|   |           |   Microsoft.Bcl.AsyncInterfaces.dll
+|   |           |   Microsoft.Build.Locator.dll
+|   |           |   Microsoft.CodeAnalysis.CSharp.dll
+|   |           |   Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+|   |           |   Microsoft.CodeAnalysis.dll
+|   |           |   Microsoft.CodeAnalysis.Workspaces.dll
+|   |           |   Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+|   |           |   Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+|   |           |   Microsoft.EntityFrameworkCore.Abstractions.dll
+|   |           |   Microsoft.EntityFrameworkCore.Design.dll
+|   |           |   Microsoft.EntityFrameworkCore.dll
+|   |           |   Microsoft.EntityFrameworkCore.Relational.dll
+|   |           |   Microsoft.Extensions.Caching.Abstractions.dll
+|   |           |   Microsoft.Extensions.Caching.Memory.dll
+|   |           |   Microsoft.Extensions.Configuration.Abstractions.dll
+|   |           |   Microsoft.Extensions.DependencyInjection.Abstractions.dll
+|   |           |   Microsoft.Extensions.DependencyInjection.dll
+|   |           |   Microsoft.Extensions.DependencyModel.dll
+|   |           |   Microsoft.Extensions.Logging.Abstractions.dll
+|   |           |   Microsoft.Extensions.Logging.dll
+|   |           |   Microsoft.Extensions.Options.dll
+|   |           |   Microsoft.Extensions.Primitives.dll
+|   |           |   Mono.TextTemplating.dll
+|   |           |   Nest.dll
+|   |           |   Npgsql.dll
+|   |           |   Npgsql.EntityFrameworkCore.PostgreSQL.dll
+|   |           |   System.CodeDom.dll
+|   |           |   System.Composition.AttributedModel.dll
+|   |           |   System.Composition.Convention.dll
+|   |           |   System.Composition.Hosting.dll
+|   |           |   System.Composition.Runtime.dll
+|   |           |   System.Composition.TypedParts.dll
+|   |           |   
+|   |           +---cs
+|   |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |           |       Microsoft.CodeAnalysis.resources.dll
+|   |           |       Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |           |       
+|   |           +---de
+|   |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |           |       Microsoft.CodeAnalysis.resources.dll
+|   |           |       Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |           |       
+|   |           +---es
+|   |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |           |       Microsoft.CodeAnalysis.resources.dll
+|   |           |       Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |           |       
+|   |           +---fr
+|   |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |           |       Microsoft.CodeAnalysis.resources.dll
+|   |           |       Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |           |       
+|   |           +---it
+|   |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |           |       Microsoft.CodeAnalysis.resources.dll
+|   |           |       Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |           |       
+|   |           +---ja
+|   |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |           |       Microsoft.CodeAnalysis.resources.dll
+|   |           |       Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |           |       
+|   |           +---ko
+|   |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |           |       Microsoft.CodeAnalysis.resources.dll
+|   |           |       Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |           |       
+|   |           +---pl
+|   |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |           |       Microsoft.CodeAnalysis.resources.dll
+|   |           |       Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |           |       
+|   |           +---pt-BR
+|   |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |           |       Microsoft.CodeAnalysis.resources.dll
+|   |           |       Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |           |       
+|   |           +---ru
+|   |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |           |       Microsoft.CodeAnalysis.resources.dll
+|   |           |       Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |           |       
+|   |           +---runtimes
+|   |           |   +---linux-arm64
+|   |           |   |   \---native
+|   |           |   |           librdkafka.so
+|   |           |   |           
+|   |           |   +---linux-x64
+|   |           |   |   \---native
+|   |           |   |           alpine-librdkafka.so
+|   |           |   |           centos8-librdkafka.so
+|   |           |   |           librdkafka.so
+|   |           |   |           
+|   |           |   +---osx-arm64
+|   |           |   |   \---native
+|   |           |   |           librdkafka.dylib
+|   |           |   |           
+|   |           |   +---osx-x64
+|   |           |   |   \---native
+|   |           |   |           librdkafka.dylib
+|   |           |   |           
+|   |           |   +---win-x64
+|   |           |   |   \---native
+|   |           |   |           libcrypto-3-x64.dll
+|   |           |   |           libcurl.dll
+|   |           |   |           librdkafka.dll
+|   |           |   |           librdkafkacpp.dll
+|   |           |   |           libssl-3-x64.dll
+|   |           |   |           msvcp140.dll
+|   |           |   |           vcruntime140.dll
+|   |           |   |           zlib1.dll
+|   |           |   |           zstd.dll
+|   |           |   |           
+|   |           |   \---win-x86
+|   |           |       \---native
+|   |           |               libcrypto-3.dll
+|   |           |               libcurl.dll
+|   |           |               librdkafka.dll
+|   |           |               librdkafkacpp.dll
+|   |           |               libssl-3.dll
+|   |           |               msvcp140.dll
+|   |           |               vcruntime140.dll
+|   |           |               zlib1.dll
+|   |           |               zstd.dll
+|   |           |               
+|   |           +---tr
+|   |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |           |       Microsoft.CodeAnalysis.resources.dll
+|   |           |       Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |           |       
+|   |           +---zh-Hans
+|   |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |           |       Microsoft.CodeAnalysis.resources.dll
+|   |           |       Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |           |       
+|   |           \---zh-Hant
+|   |                   Microsoft.CodeAnalysis.CSharp.resources.dll
+|   |                   Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|   |                   Microsoft.CodeAnalysis.resources.dll
+|   |                   Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+|   |                   Microsoft.CodeAnalysis.Workspaces.resources.dll
+|   |                   
+|   +---Controllers
+|   |       AuthorsController.cs
+|   |       BooksController.cs
+|   |       CategoreisController.cs
+|   |       HomeController.cs
+|   |       
+|   +---Data
+|   |       AppDbContext.cs
+|   |       
+|   +---Messaging
+|   |       KafkaLibraryConsumer.cs
+|   |       KafkaLibraryInitializer.cs
+|   |       KafkaLibraryPrdoucer.cs
+|   |       
+|   +---Migrations
+|   |       20250730084717_InitialCreate.cs
+|   |       20250730084717_InitialCreate.Designer.cs
+|   |       AppDbContextModelSnapshot.cs
+|   |       
+|   +---Models
+|   |       Author.cs
+|   |       Book.cs
+|   |       Category.cs
+|   |       ErrorViewModel.cs
+|   |       IndexBookDtocs.cs
+|   |       
+|   +---obj
+|   |   |   Library.csproj.EntityFrameworkCore.targets
+|   |   |   Library.csproj.nuget.dgspec.json
+|   |   |   Library.csproj.nuget.g.props
+|   |   |   Library.csproj.nuget.g.targets
+|   |   |   project.assets.json
+|   |   |   project.nuget.cache
+|   |   |   
+|   |   +---Container
+|   |   |       AbsoluteOutputAssemblyPath.cache
+|   |   |       AdditionalProbingPaths.cache
+|   |   |       ContainerDevelopmentMode.cache
+|   |   |       ContainerId.cache
+|   |   |       ContainerName.cache
+|   |   |       ContainerOperatingSystemFlavor.cache
+|   |   |       ContainerRunContext.cache
+|   |   |       DebuggeeArguments.cache
+|   |   |       DebuggeeKillProcessCommand.cache
+|   |   |       DebuggeeProgram.cache
+|   |   |       DebuggeeWorkingDirectory.cache
+|   |   |       DistrolessHelperSupported.cache
+|   |   |       FastModeProjectMountDirectory.cache
+|   |   |       ImageBuildContext.cache
+|   |   |       ImageId.cache
+|   |   |       LaunchedImageId.cache
+|   |   |       OperatingSystemName.cache
+|   |   |       TargetFramework.cache
+|   |   |       VolumeMappings.cache
+|   |   |       VolumeMappings2.cache
+|   |   |       VsDbgScript.cache
+|   |   |       
+|   |   +---Debug
+|   |   |   \---net9.0
+|   |   |       |   .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+|   |   |       |   ApiEndpoints.json
+|   |   |       |   apphost.exe
+|   |   |       |   Library.AssemblyInfo.cs
+|   |   |       |   Library.AssemblyInfoInputs.cache
+|   |   |       |   Library.assets.cache
+|   |   |       |   Library.csproj.AssemblyReference.cache
+|   |   |       |   Library.csproj.BuildWithSkipAnalyzers
+|   |   |       |   Library.csproj.CoreCompileInputs.cache
+|   |   |       |   Library.csproj.FileListAbsolute.txt
+|   |   |       |   Library.csproj.Up2Date
+|   |   |       |   Library.dll
+|   |   |       |   Library.GeneratedMSBuildEditorConfig.editorconfig
+|   |   |       |   Library.genruntimeconfig.cache
+|   |   |       |   Library.GlobalUsings.g.cs
+|   |   |       |   Library.MvcApplicationPartsAssemblyInfo.cache
+|   |   |       |   Library.pdb
+|   |   |       |   Library.RazorAssemblyInfo.cache
+|   |   |       |   Library.RazorAssemblyInfo.cs
+|   |   |       |   Library.sourcelink.json
+|   |   |       |   rbcswa.dswa.cache.json
+|   |   |       |   rjimswa.dswa.cache.json
+|   |   |       |   rjsmcshtml.dswa.cache.json
+|   |   |       |   rjsmrazor.dswa.cache.json
+|   |   |       |   rpswa.dswa.cache.json
+|   |   |       |   staticwebassets.build.endpoints.json
+|   |   |       |   staticwebassets.build.json
+|   |   |       |   staticwebassets.build.json.cache
+|   |   |       |   staticwebassets.development.json
+|   |   |       |   staticwebassets.references.upToDateCheck.txt
+|   |   |       |   staticwebassets.removed.txt
+|   |   |       |   staticwebassets.upToDateCheck.txt
+|   |   |       |   
+|   |   |       +---compressed
+|   |   |       |       07x120xk1v-rxsg74s51o.gz
+|   |   |       |       1joxrw16wa-ltid2c489k.gz
+|   |   |       |       2ayl6ew1lv-c2oey78nd0.gz
+|   |   |       |       3hofpp32rl-0j3bgjxly4.gz
+|   |   |       |       3ncptg4ou3-tmc1g35s3z.gz
+|   |   |       |       3nxl9vgbpv-sejl45xvog.gz
+|   |   |       |       40bb5sptdq-m9qm4tazc0.gz
+|   |   |       |       4nejry2i8c-x0q3zqp4vz.gz
+|   |   |       |       52h4byqm3r-mrlpezrjn3.gz
+|   |   |       |       6igtwr77pd-hd3gran6i8.gz
+|   |   |       |       6jy7h89tas-xvp3kq03qx.gz
+|   |   |       |       7jc6og4pgm-9vr69e8ynj.gz
+|   |   |       |       820zl401gr-356vix0kms.gz
+|   |   |       |       8bdz9zw2md-j5mq2jizvt.gz
+|   |   |       |       a5cc9hbs6x-jd9uben2k1.gz
+|   |   |       |       abzc7wt6y1-aexeepp0ev.gz
+|   |   |       |       adx7lbj9wp-c2jlpeoesf.gz
+|   |   |       |       bjx09uqr3q-ynyaa8k90p.gz
+|   |   |       |       c4gqdfete3-keugtjm085.gz
+|   |   |       |       detv5bv6zu-wl58j5mj3v.gz
+|   |   |       |       e09bank4c4-xtxxf3hu2r.gz
+|   |   |       |       e1s5y3ad7l-4094rpi4f9.gz
+|   |   |       |       e701ort9vm-ft3s53vfgj.gz
+|   |   |       |       ej1sms2abg-v0zj4ognzu.gz
+|   |   |       |       f6c53qx2sb-mlv21k5csn.gz
+|   |   |       |       fgvgggoj04-ee0r1s7dh0.gz
+|   |   |       |       fo2e1x5iwt-fsbi9cje9m.gz
+|   |   |       |       fz03ymq9oo-pj5nd1wqec.gz
+|   |   |       |       g52ylg7q2n-8vyfqsqgz1.gz
+|   |   |       |       iiibn7tybo-b9sayid5wm.gz
+|   |   |       |       ivm17ntwyt-87fc7y1x7t.gz
+|   |   |       |       jlbfucyvau-y7v9cxd14o.gz
+|   |   |       |       jrnwtc7gte-kbrnm935zg.gz
+|   |   |       |       k906iuuodv-c63t5i9ira.gz
+|   |   |       |       kaflzwukye-43atpzeawx.gz
+|   |   |       |       kex5jf163p-fvhpjtyr6v.gz
+|   |   |       |       li3dmzd9am-4d85u1mtcx.gz
+|   |   |       |       liicqy2of6-u9q1upor1n.gz
+|   |   |       |       lrdgzvlvuo-t1cqhe9u97.gz
+|   |   |       |       mkqh28jxdo-gk0pw8i4co.gz
+|   |   |       |       mpaz3hndek-q9ht133ko3.gz
+|   |   |       |       nbd48p4omx-61n19gt1b8.gz
+|   |   |       |       ndneu6rni5-va0zziu0wb.gz
+|   |   |       |       o6a0nrwq8a-gye83jo8yx.gz
+|   |   |       |       r5pxh6hjpj-ttgo8qnofa.gz
+|   |   |       |       rj7x3fryn8-qesaa3a1fm.gz
+|   |   |       |       ryj3fco2f4-zub09dkrxp.gz
+|   |   |       |       s36f87r2e9-ausgxo2sd3.gz
+|   |   |       |       s7z8eqbmv7-va0zziu0wb.gz
+|   |   |       |       sspdqplb62-48y08845bh.gz
+|   |   |       |       tf9eat4qja-d6nrnj6jjx.gz
+|   |   |       |       trwsygo3en-worgj0nhwm.gz
+|   |   |       |       tusm97ha1f-r4e9w2rdcm.gz
+|   |   |       |       u6fcmbvfch-jjsuc0puko.gz
+|   |   |       |       uinpzcsx0o-h1s4sie4z3.gz
+|   |   |       |       v88hlgrvhu-iovd86k7lj.gz
+|   |   |       |       vkfy5thn9u-22vffe00uq.gz
+|   |   |       |       wnemoz57ab-d4r6k3f320.gz
+|   |   |       |       x9a86uw17p-83jwlth58m.gz
+|   |   |       |       xd6ean6q1n-cosvhxvwiu.gz
+|   |   |       |       xintg38r9b-03hjc8e09r.gz
+|   |   |       |       xkz3gb35j9-hrwsygsryq.gz
+|   |   |       |       xt6kg2exmp-nvvlpmu67g.gz
+|   |   |       |       zq6y4tok3l-6pdc2jztkx.gz
+|   |   |       |       
+|   |   |       +---ref
+|   |   |       |       Library.dll
+|   |   |       |       
+|   |   |       +---refint
+|   |   |       |       Library.dll
+|   |   |       |       
+|   |   |       +---scopedcss
+|   |   |       |   +---bundle
+|   |   |       |   |       Library.styles.css
+|   |   |       |   |       
+|   |   |       |   +---projectbundle
+|   |   |       |   |       Library.bundle.scp.css
+|   |   |       |   |       
+|   |   |       |   \---Views
+|   |   |       |       \---Shared
+|   |   |       |               _Layout.cshtml.rz.scp.css
+|   |   |       |               
+|   |   |       \---staticwebassets
+|   |   +---Docker
+|   |   |   \---empty
+|   |   \---Release
+|   |       \---net9.0
+|   |           |   .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+|   |           |   apphost.exe
+|   |           |   Library.AssemblyInfo.cs
+|   |           |   Library.AssemblyInfoInputs.cache
+|   |           |   Library.assets.cache
+|   |           |   Library.csproj.AssemblyReference.cache
+|   |           |   Library.csproj.BuildWithSkipAnalyzers
+|   |           |   Library.csproj.CoreCompileInputs.cache
+|   |           |   Library.csproj.FileListAbsolute.txt
+|   |           |   Library.csproj.Up2Date
+|   |           |   Library.dll
+|   |           |   Library.GeneratedMSBuildEditorConfig.editorconfig
+|   |           |   Library.genruntimeconfig.cache
+|   |           |   Library.GlobalUsings.g.cs
+|   |           |   Library.MvcApplicationPartsAssemblyInfo.cache
+|   |           |   Library.pdb
+|   |           |   Library.RazorAssemblyInfo.cache
+|   |           |   Library.RazorAssemblyInfo.cs
+|   |           |   rbcswa.dswa.cache.json
+|   |           |   rjimswa.dswa.cache.json
+|   |           |   rjsmcshtml.dswa.cache.json
+|   |           |   rjsmrazor.dswa.cache.json
+|   |           |   rpswa.dswa.cache.json
+|   |           |   staticwebassets.build.endpoints.json
+|   |           |   staticwebassets.build.json
+|   |           |   staticwebassets.build.json.cache
+|   |           |   staticwebassets.development.json
+|   |           |   staticwebassets.references.upToDateCheck.txt
+|   |           |   staticwebassets.removed.txt
+|   |           |   staticwebassets.upToDateCheck.txt
+|   |           |   
+|   |           +---compressed
+|   |           |       07x120xk1v-rzd6atqjts.gz
+|   |           |       1joxrw16wa-vr1egmr9el.gz
+|   |           |       2ayl6ew1lv-c2oey78nd0.gz
+|   |           |       3hofpp32rl-0j3bgjxly4.gz
+|   |           |       3ncptg4ou3-b7pk76d08c.gz
+|   |           |       3nxl9vgbpv-erw9l3u2r3.gz
+|   |           |       40bb5sptdq-o1o13a6vjx.gz
+|   |           |       4nejry2i8c-x0q3zqp4vz.gz
+|   |           |       52h4byqm3r-mrlpezrjn3.gz
+|   |           |       6igtwr77pd-493y06b0oq.gz
+|   |           |       6jy7h89tas-d7shbmvgxk.gz
+|   |           |       7jc6og4pgm-muycvpuwrr.gz
+|   |           |       820zl401gr-356vix0kms.gz
+|   |           |       8bdz9zw2md-j5mq2jizvt.gz
+|   |           |       a5cc9hbs6x-jd9uben2k1.gz
+|   |           |       abzc7wt6y1-aexeepp0ev.gz
+|   |           |       adx7lbj9wp-c2jlpeoesf.gz
+|   |           |       bjx09uqr3q-37tfw0ft22.gz
+|   |           |       c4gqdfete3-06098lyss8.gz
+|   |           |       detv5bv6zu-lcd1t2u6c8.gz
+|   |           |       e09bank4c4-xtxxf3hu2r.gz
+|   |           |       e1s5y3ad7l-6cfz1n2cew.gz
+|   |           |       e701ort9vm-ft3s53vfgj.gz
+|   |           |       ej1sms2abg-v0zj4ognzu.gz
+|   |           |       f6c53qx2sb-mlv21k5csn.gz
+|   |           |       fgvgggoj04-ee0r1s7dh0.gz
+|   |           |       fo2e1x5iwt-fsbi9cje9m.gz
+|   |           |       fz03ymq9oo-pj5nd1wqec.gz
+|   |           |       g52ylg7q2n-jj8uyg4cgr.gz
+|   |           |       iiibn7tybo-b9sayid5wm.gz
+|   |           |       ivm17ntwyt-87fc7y1x7t.gz
+|   |           |       jlbfucyvau-y7v9cxd14o.gz
+|   |           |       jrnwtc7gte-kbrnm935zg.gz
+|   |           |       k906iuuodv-pk9g2wxc8p.gz
+|   |           |       kaflzwukye-46ein0sx1k.gz
+|   |           |       kex5jf163p-fvhpjtyr6v.gz
+|   |           |       li3dmzd9am-63fj8s7r0e.gz
+|   |           |       liicqy2of6-notf2xhcfb.gz
+|   |           |       lrdgzvlvuo-bqjiyaj88i.gz
+|   |           |       mkqh28jxdo-ag7o75518u.gz
+|   |           |       mpaz3hndek-dxx9fxp4il.gz
+|   |           |       nbd48p4omx-61n19gt1b8.gz
+|   |           |       ndneu6rni5-va0zziu0wb.gz
+|   |           |       o6a0nrwq8a-khv3u5hwcm.gz
+|   |           |       r5pxh6hjpj-ttgo8qnofa.gz
+|   |           |       rj7x3fryn8-ub07r2b239.gz
+|   |           |       ryj3fco2f4-s35ty4nyc5.gz
+|   |           |       s36f87r2e9-ausgxo2sd3.gz
+|   |           |       s7z8eqbmv7-va0zziu0wb.gz
+|   |           |       sspdqplb62-4v8eqarkd7.gz
+|   |           |       tf9eat4qja-0i3buxo5is.gz
+|   |           |       trwsygo3en-lzl9nlhx6b.gz
+|   |           |       tusm97ha1f-r4e9w2rdcm.gz
+|   |           |       u6fcmbvfch-2z0ns9nrw6.gz
+|   |           |       uinpzcsx0o-h1s4sie4z3.gz
+|   |           |       v88hlgrvhu-iovd86k7lj.gz
+|   |           |       vkfy5thn9u-k8d9w2qqmf.gz
+|   |           |       wnemoz57ab-tdbxkamptv.gz
+|   |           |       x9a86uw17p-83jwlth58m.gz
+|   |           |       xd6ean6q1n-cosvhxvwiu.gz
+|   |           |       xintg38r9b-47otxtyo56.gz
+|   |           |       xkz3gb35j9-hrwsygsryq.gz
+|   |           |       xt6kg2exmp-nvvlpmu67g.gz
+|   |           |       zq6y4tok3l-6pdc2jztkx.gz
+|   |           |       
+|   |           +---ref
+|   |           |       Library.dll
+|   |           |       
+|   |           +---refint
+|   |           |       Library.dll
+|   |           |       
+|   |           +---scopedcss
+|   |           |   +---bundle
+|   |           |   |       Library.styles.css
+|   |           |   |       
+|   |           |   +---projectbundle
+|   |           |   |       Library.bundle.scp.css
+|   |           |   |       
+|   |           |   \---Views
+|   |           |       \---Shared
+|   |           |               _Layout.cshtml.rz.scp.css
+|   |           |               
+|   |           \---staticwebassets
+|   +---Properties
+|   |       launchSettings.json
+|   |       
+|   +---Services
+|   |       BookIndexService.cs
+|   |       ElasticSearchInitializer.cs
+|   |       KafkaInitializerService.cs
+|   |       
+|   +---Views
+|   |   |   _ViewImports.cshtml
+|   |   |   _ViewStart.cshtml
+|   |   |   
+|   |   +---Authors
+|   |   |       Create.cshtml
+|   |   |       Index.cshtml
+|   |   |       
+|   |   +---Books
+|   |   |       Create.cshtml
+|   |   |       Index.cshtml
+|   |   |       Search.cshtml
+|   |   |       
+|   |   +---Categories
+|   |   |       Create.cshtml
+|   |   |       Index.cshtml
+|   |   |       
+|   |   +---Home
+|   |   |       Index.cshtml
+|   |   |       
+|   |   \---Shared
+|   |           Error.cshtml
+|   |           _Layout.cshtml
+|   |           _Layout.cshtml.css
+|   |           _ValidationScriptsPartial.cshtml
+|   |           
+|   \---wwwroot
+|       |   favicon.ico
+|       |   
+|       +---css
+|       |       site.css
+|       |       
+|       +---js
+|       |       site.js
+|       |       
+|       \---lib
+|           +---bootstrap
+|           |   |   LICENSE
+|           |   |   
+|           |   \---dist
+|           |       +---css
+|           |       |       bootstrap-grid.css
+|           |       |       bootstrap-grid.css.map
+|           |       |       bootstrap-grid.min.css
+|           |       |       bootstrap-grid.min.css.map
+|           |       |       bootstrap-grid.rtl.css
+|           |       |       bootstrap-grid.rtl.css.map
+|           |       |       bootstrap-grid.rtl.min.css
+|           |       |       bootstrap-grid.rtl.min.css.map
+|           |       |       bootstrap-reboot.css
+|           |       |       bootstrap-reboot.css.map
+|           |       |       bootstrap-reboot.min.css
+|           |       |       bootstrap-reboot.min.css.map
+|           |       |       bootstrap-reboot.rtl.css
+|           |       |       bootstrap-reboot.rtl.css.map
+|           |       |       bootstrap-reboot.rtl.min.css
+|           |       |       bootstrap-reboot.rtl.min.css.map
+|           |       |       bootstrap-utilities.css
+|           |       |       bootstrap-utilities.css.map
+|           |       |       bootstrap-utilities.min.css
+|           |       |       bootstrap-utilities.min.css.map
+|           |       |       bootstrap-utilities.rtl.css
+|           |       |       bootstrap-utilities.rtl.css.map
+|           |       |       bootstrap-utilities.rtl.min.css
+|           |       |       bootstrap-utilities.rtl.min.css.map
+|           |       |       bootstrap.css
+|           |       |       bootstrap.css.map
+|           |       |       bootstrap.min.css
+|           |       |       bootstrap.min.css.map
+|           |       |       bootstrap.rtl.css
+|           |       |       bootstrap.rtl.css.map
+|           |       |       bootstrap.rtl.min.css
+|           |       |       bootstrap.rtl.min.css.map
+|           |       |       
+|           |       \---js
+|           |               bootstrap.bundle.js
+|           |               bootstrap.bundle.js.map
+|           |               bootstrap.bundle.min.js
+|           |               bootstrap.bundle.min.js.map
+|           |               bootstrap.esm.js
+|           |               bootstrap.esm.js.map
+|           |               bootstrap.esm.min.js
+|           |               bootstrap.esm.min.js.map
+|           |               bootstrap.js
+|           |               bootstrap.js.map
+|           |               bootstrap.min.js
+|           |               bootstrap.min.js.map
+|           |               
+|           +---jquery
+|           |   |   LICENSE.txt
+|           |   |   
+|           |   \---dist
+|           |           jquery.js
+|           |           jquery.min.js
+|           |           jquery.min.map
+|           |           jquery.slim.js
+|           |           jquery.slim.min.js
+|           |           jquery.slim.min.map
+|           |           
+|           +---jquery-validation
+|           |   |   LICENSE.md
+|           |   |   
+|           |   \---dist
+|           |           additional-methods.js
+|           |           additional-methods.min.js
+|           |           jquery.validate.js
+|           |           jquery.validate.min.js
+|           |           
+|           \---jquery-validation-unobtrusive
+|               |   LICENSE.txt
+|               |   
+|               \---dist
+|                       jquery.validate.unobtrusive.js
+|                       jquery.validate.unobtrusive.min.js
+|                       
+\---obj
+    +---Debug
+    |       docker-c.35A3FFBA.Up2Date
+    |       docker-compose.dcproj.AssemblyReference.cache
+    |       docker-compose.dcproj.CoreCompileInputs.cache
+    |       docker-compose.dcproj.FileListAbsolute.txt
+    |       
+    \---Docker
+        |   CachedComposeConfigFilePaths.cache
+        |   docker-compose.vs.debug.g.yml
+        |   docker-compose.vs.debug.partial.g.yml
+        |   docker-compose.vs.release.g.yml
+        |   docker-compose.vs.release.partial.g.yml
+        |   DockerDevelopmentMode.cache
+        |   DOCKER_REGISTRY.cache
+        |   HashOfDockerArtifacts.cache
+        |   LaunchContext.cache
+        |   MergedDockerCompose.cache
+        |   MergedDockerCompose1.cache
+        |   MergedDockerCompose10.cache
+        |   MergedDockerCompose100.cache
+        |   MergedDockerCompose101.cache
+        |   MergedDockerCompose102.cache
+        |   MergedDockerCompose103.cache
+        |   MergedDockerCompose104.cache
+        |   MergedDockerCompose105.cache
+        |   MergedDockerCompose106.cache
+        |   MergedDockerCompose11.cache
+        |   MergedDockerCompose12.cache
+        |   MergedDockerCompose13.cache
+        |   MergedDockerCompose14.cache
+        |   MergedDockerCompose15.cache
+        |   MergedDockerCompose16.cache
+        |   MergedDockerCompose17.cache
+        |   MergedDockerCompose18.cache
+        |   MergedDockerCompose19.cache
+        |   MergedDockerCompose2.cache
+        |   MergedDockerCompose20.cache
+        |   MergedDockerCompose21.cache
+        |   MergedDockerCompose22.cache
+        |   MergedDockerCompose23.cache
+        |   MergedDockerCompose24.cache
+        |   MergedDockerCompose25.cache
+        |   MergedDockerCompose26.cache
+        |   MergedDockerCompose27.cache
+        |   MergedDockerCompose28.cache
+        |   MergedDockerCompose29.cache
+        |   MergedDockerCompose3.cache
+        |   MergedDockerCompose30.cache
+        |   MergedDockerCompose31.cache
+        |   MergedDockerCompose32.cache
+        |   MergedDockerCompose33.cache
+        |   MergedDockerCompose34.cache
+        |   MergedDockerCompose35.cache
+        |   MergedDockerCompose36.cache
+        |   MergedDockerCompose37.cache
+        |   MergedDockerCompose38.cache
+        |   MergedDockerCompose39.cache
+        |   MergedDockerCompose4.cache
+        |   MergedDockerCompose40.cache
+        |   MergedDockerCompose41.cache
+        |   MergedDockerCompose42.cache
+        |   MergedDockerCompose43.cache
+        |   MergedDockerCompose44.cache
+        |   MergedDockerCompose45.cache
+        |   MergedDockerCompose46.cache
+        |   MergedDockerCompose47.cache
+        |   MergedDockerCompose48.cache
+        |   MergedDockerCompose49.cache
+        |   MergedDockerCompose5.cache
+        |   MergedDockerCompose50.cache
+        |   MergedDockerCompose51.cache
+        |   MergedDockerCompose52.cache
+        |   MergedDockerCompose53.cache
+        |   MergedDockerCompose54.cache
+        |   MergedDockerCompose55.cache
+        |   MergedDockerCompose56.cache
+        |   MergedDockerCompose57.cache
+        |   MergedDockerCompose58.cache
+        |   MergedDockerCompose59.cache
+        |   MergedDockerCompose6.cache
+        |   MergedDockerCompose60.cache
+        |   MergedDockerCompose61.cache
+        |   MergedDockerCompose62.cache
+        |   MergedDockerCompose63.cache
+        |   MergedDockerCompose64.cache
+        |   MergedDockerCompose65.cache
+        |   MergedDockerCompose66.cache
+        |   MergedDockerCompose67.cache
+        |   MergedDockerCompose68.cache
+        |   MergedDockerCompose69.cache
+        |   MergedDockerCompose7.cache
+        |   MergedDockerCompose70.cache
+        |   MergedDockerCompose71.cache
+        |   MergedDockerCompose72.cache
+        |   MergedDockerCompose73.cache
+        |   MergedDockerCompose74.cache
+        |   MergedDockerCompose75.cache
+        |   MergedDockerCompose76.cache
+        |   MergedDockerCompose77.cache
+        |   MergedDockerCompose78.cache
+        |   MergedDockerCompose79.cache
+        |   MergedDockerCompose8.cache
+        |   MergedDockerCompose80.cache
+        |   MergedDockerCompose81.cache
+        |   MergedDockerCompose82.cache
+        |   MergedDockerCompose83.cache
+        |   MergedDockerCompose84.cache
+        |   MergedDockerCompose85.cache
+        |   MergedDockerCompose86.cache
+        |   MergedDockerCompose87.cache
+        |   MergedDockerCompose88.cache
+        |   MergedDockerCompose89.cache
+        |   MergedDockerCompose9.cache
+        |   MergedDockerCompose90.cache
+        |   MergedDockerCompose91.cache
+        |   MergedDockerCompose92.cache
+        |   MergedDockerCompose93.cache
+        |   MergedDockerCompose94.cache
+        |   MergedDockerCompose95.cache
+        |   MergedDockerCompose96.cache
+        |   MergedDockerCompose97.cache
+        |   MergedDockerCompose98.cache
+        |   MergedDockerCompose99.cache
+        |   TargetOS.cache
+        |   
+        +---app
+        |       AbsoluteOutputAssemblyPath.cache
+        |       BuildContextPath.cache
+        |       ContainerDebugAbsoluteOutputAssemblyPath.cache
+        |       DistrolessHelperSupported.cache
+        |       ProjectReferences.cache
+        |       ProjectType.cache
+        |       TargetFramework.cache
+        |       TargetFrameworkVersion.cache
+        |       VolumeMappingsForTools.cache
+        |       
+        +---library
+        |       AbsoluteOutputAssemblyPath.cache
+        |       BuildContextPath.cache
+        |       ContainerDebugAbsoluteOutputAssemblyPath.cache
+        |       DistrolessHelperSupported.cache
+        |       ProjectReferences.cache
+        |       ProjectType.cache
+        |       TargetFramework.cache
+        |       TargetFrameworkVersion.cache
+        |       VolumeMappingsForStaticWebAssets.cache
+        |       VolumeMappingsForTools.cache
+        |       
+        \---obj
+            \---Docker
+                    ContainerCreationResult.cache
+                    
