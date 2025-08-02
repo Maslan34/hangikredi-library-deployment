@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Elastic Book Search";
+    Layout = "_Layout";
+}
+
+<h2>Search Books (Elastic)</h2>
+
+<div class="input-group mb-3">
+    <input id="searchInput" type="text" class="form-control" placeholder="Type to search books..." />
+    <button onclick="searchBooks()" class="btn btn-primary">Search</button>
+</div>
+
+<div id="results"></div>
+
+@section Scripts {
+    <script>
+                 async function searchBooks() {
+            try {
+           
+                const query = document.getElementById("searchInput").value;
+                const response = await fetch(`/Books/SearchDone?q=${encodeURIComponent(query)}`);
+                //console.log(query); --> Debug
+                //console.log(response); --> Debug
+                if (!response.ok) {
+                    alert('Error: ' + response.status);
+                    return;
+                }
+
+                const books = await response.json();
+                // console.log(books); --> Debug
+
+                let html = '';
+                if (books.length > 0) {
+                    html += '<table class="table table-bordered">';
+                    html += '<thead><tr><th>Title</th><th>Description</th><th>Author</th><th>Category</th></tr></thead>';
+                    html += '<tbody>';
+                    for (let book of books) {
+                        html += `<tr>
+                            <td>${book.Title}</td>
+                            <td>${book.Description}</td>
+                            <td>${book.Author.Name ?? ''}</td>
+                            <td>${book.Category.Name ?? ''}</td>
+                        </tr>`;
+                    }
+                    html += '</tbody></table>';
+                } else {
+                    html = '<p class="text-muted">No results found.</p>';
+                }
+
+                document.getElementById("results").innerHTML = html;
+            } catch (error) {
+                console.error("Error in searchBooks function:", error);
+            }
+        }
+
+
+    </script>
+}
