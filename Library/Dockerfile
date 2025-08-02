@@ -7,28 +7,27 @@ EXPOSE 80
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
 
-# Debug 1: Başlangıçta build context içeriği (boşsa burada görünür)
+# Debug 1: Build context içeriği
 RUN ls -la /src
 
-# Proje dosyasını kopyala
-# Eğer build context root ise:
-# COPY ["Library/Library.csproj", "./"]
-# Eğer build context ./Library ise:
-COPY ["Library.csproj", "./"]
+# Proje dosyasını kopyala (kök dizinden Library klasörü içindeki .csproj)
+COPY ["Library/Library.csproj", "Library/"]
 
 # Debug 2: Library.csproj'nin kopyalanıp kopyalanmadığını kontrol et
-RUN ls -la /src
+RUN ls -la /src/Library/
 
+# Working directory'yi Library klasörüne değiştir
+WORKDIR /src/Library
 RUN dotnet restore "Library.csproj"
 
 # Debug 3: Restore sonrası dosya kontrolü
-RUN ls -la /src
+RUN ls -la /src/Library/
 
-# Tüm kaynakları kopyala
-COPY . .
+# Tüm Library kaynaklarını kopyala
+COPY Library/ .
 
 # Debug 4: Tüm kaynaklar kopyalandıktan sonra içeriği gör
-RUN ls -la /src
+RUN ls -la /src/Library/
 
 # Projeyi build et
 RUN dotnet build "Library.csproj" -c Release -o /app/build
