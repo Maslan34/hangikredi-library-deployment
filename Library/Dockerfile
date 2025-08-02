@@ -7,13 +7,13 @@ EXPOSE 80
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
 
-# Debug 1: Build context içeriği
+# Debug 1: Build context içeriği ayarla
 RUN ls -la /src
 
 # Proje dosyasını kopyala (kök dizinden Library klasörü içindeki .csproj)
 COPY ["Library/Library.csproj", "Library/"]
 
-# Debug 2: Library.csproj'nin kopyalanıp kopyalanmadığını kontrol et
+# Debug 2: Library.csproj'nin kopyalanıp kopyalanmadığını kontrol et 
 RUN ls -la /src/Library/
 
 # Working directory'yi Library klasörüne değiştir
