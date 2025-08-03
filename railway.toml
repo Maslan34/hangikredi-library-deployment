@@ -1,0 +1,6 @@
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "Library/Dockerfile"
+
+[deploy]
+startCommand = "dotnet Library.dll"
