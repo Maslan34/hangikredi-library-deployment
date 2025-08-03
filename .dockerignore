@@ -1,23 +1,4 @@
-# IDE ve yapý dosyalarý
-.vscode/
-.idea/
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-
-# Derleme klasörleri
 bin/
 obj/
-
-# Kök klasöre deðil, sadece proje altýna uygulanmasý gerekenler
-**/node_modules/
-**/npm-debug.log
-
-# Git ve proje yönetimi
+.vscode/
 .git/
-.gitignore
-
-# Yalnýzca geçici veya lokal þeyleri dýþla
-docker-compose.override.yml
-.env
