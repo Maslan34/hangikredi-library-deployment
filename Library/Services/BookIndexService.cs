@@ -7,11 +7,11 @@ using Nest;
 namespace Library.Services;
 public class BookIndexService
 {
-    private readonly ElasticClient _client;
+    private readonly ElasticClient? _client;
     private readonly AppDbContext _appDbContext;
     private const string IndexName = "books";
 
-    public BookIndexService(ElasticClient client,AppDbContext appDbContext)
+    public BookIndexService(ElasticClient? client, AppDbContext appDbContext)
     {
         _client = client;
         _appDbContext = appDbContext;
@@ -19,6 +19,13 @@ public class BookIndexService
 
     public async Task InitializeAsync()
     {
+        // Elasticsearch yoksa hiçbir şey yapma
+        if (_client == null)
+        {
+            Console.WriteLine("===> Elasticsearch client is null, skipping initialization.");
+            return;
+        }
+
         var pingResponse = await _client.PingAsync();
         if (pingResponse.IsValid)
         {
@@ -47,7 +54,6 @@ public class BookIndexService
 
             if (createIndexResponse.IsValid)
                 Console.WriteLine("===> Index created successfully.");
-
             else
                 Console.WriteLine($"===> Index creation failed: {createIndexResponse.ServerError?.Error.Reason}");
         }
@@ -59,6 +65,13 @@ public class BookIndexService
 
     public async Task IndexBookAsync(Book book)
     {
+        // Elasticsearch yoksa hiçbir şey yapma
+        if (_client == null)
+        {
+            Console.WriteLine("===> Elasticsearch not available, skipping book indexing.");
+            return;
+        }
+
         var dto = new IndexBookDto
         {
             Id = book.Id,
@@ -74,23 +87,38 @@ public class BookIndexService
             Console.WriteLine($"===> Indexing error: {indexResponse.ServerError?.Error.Reason}");
         else
             Console.WriteLine($"===> Book indexed to Elasticsearch (Id: {dto.Id})");
-
     }
 
     public async Task DeleteBookAsync(int bookId)
     {
+        // Elasticsearch yoksa hiçbir şey yapma
+        if (_client == null)
+        {
+            Console.WriteLine("===> Elasticsearch not available, skipping book deletion from index.");
+            return;
+        }
+
         var deleteResponse = await _client.DeleteAsync<IndexBookDto>(bookId, d => d.Index(IndexName));
 
         if (deleteResponse.IsValid)
             Console.WriteLine($"===> Book deleted from Elasticsearch index (Id: {bookId})");
-
         else
             Console.WriteLine($"===> Deletion error: {deleteResponse.ServerError?.Error.Reason}");
-
     }
 
     public async Task<IEnumerable<Book>> SearchAsync(string query)
     {
+        // Elasticsearch yoksa veritabanından arama yap
+        if (_client == null)
+        {
+            Console.WriteLine("===> Elasticsearch not available, falling back to database search.");
+            return await _appDbContext.Books
+                .Include(b => b.Author)
+                .Include(b => b.Category)
+                .Where(b => b.Title.Contains(query) || b.Description.Contains(query))
+                .ToListAsync();
+        }
+
         var response = await _client.SearchAsync<Book>(s => s
             .Query(q => q
                 .MultiMatch(m => m
@@ -103,15 +131,16 @@ public class BookIndexService
             )
         );
 
-        //Console.WriteLine("IsValid: " + response.IsValid);
-        //Console.WriteLine("ServerError: " + (response.ServerError != null ? response.ServerError.Error.Reason : "No error"));
-        //Console.WriteLine("Debug info: " + response.DebugInformation);
-
         if (!response.IsValid)
         {
-            return Enumerable.Empty<Book>();
+            Console.WriteLine("===> Elasticsearch search failed, falling back to database search.");
+            return await _appDbContext.Books
+                .Include(b => b.Author)
+                .Include(b => b.Category)
+                .Where(b => b.Title.Contains(query) || b.Description.Contains(query))
+                .ToListAsync();
         }
-       
+
         var books = response.Documents.ToList();
 
         foreach (var book in books)
@@ -119,6 +148,7 @@ public class BookIndexService
             book.Author = await _appDbContext.Authors.FindAsync(book.AuthorId);
             book.Category = await _appDbContext.Categories.FindAsync(book.CategoryId);
         }
+
         Console.WriteLine("Total hits: " + response.Total);
         return books;
     }

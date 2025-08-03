@@ -91,7 +91,7 @@ if (!string.IsNullOrEmpty(elasticUri))
         return new ElasticClient(settings);
     });
 
-    // Service Registration
+    // Service Registration - DÜZELTÝLDÝ: Dependency injection otomatik resolve edecek
     builder.Services.AddScoped<BookIndexService>();
     builder.Services.AddHostedService<ElasticsearchInitializer>();
 }
@@ -99,11 +99,11 @@ else
 {
     Console.WriteLine("Elasticsearch configuration not found, skipping Elasticsearch services...");
 
-    // Elasticsearch olmadýðýnda BookIndexService'i boþ implementation ile ekle
+    // Elasticsearch olmadýðýnda BookIndexService'i boþ implementation ile ekle - DÜZELTÝLDÝ
     builder.Services.AddScoped<BookIndexService>(sp =>
     {
-        // Elasticsearch olmadýðýnda null ElasticClient ile çalýþacak þekilde ayarla
-        return new BookIndexService(null);
+        var appDbContext = sp.GetRequiredService<AppDbContext>();
+        return new BookIndexService(null, appDbContext);
     });
 }
 // ========================= Elastic =========================
