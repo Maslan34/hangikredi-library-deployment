@@ -1,5 +1,6 @@
 ﻿<table class="table table-striped">
     <tr>
+        <th>Id</th>
         <th>Name</th>
         <th>Biography</th>
         <th>Actions</th>
@@ -7,6 +8,7 @@
     @foreach (var author in Model)
     {
         <tr>
+            <th>@author.Id</th>
             <td>@author.Name</td>
             <td>@author.Biography</td>
             <td>
