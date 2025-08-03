@@ -1,7 +1,6 @@
 version: '3.8'
 services:
   library:
-    image: library
     build:
       context: .  
       dockerfile: Library/Dockerfile  
@@ -15,10 +14,12 @@ services:
       Elastic__Password: "PwkDC4KKmTKSA0_z9zI7"
       ASPNETCORE_URLS: "http://0.0.0.0:80"
     depends_on:
-      - postgres
-      - kafka
-      - elasticsearch
-      - zookeeper
+      postgres:
+        condition: service_healthy
+      kafka:
+        condition: service_started
+      elasticsearch:
+        condition: service_started
     restart: unless-stopped
 
   zookeeper:

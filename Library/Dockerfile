@@ -7,26 +7,25 @@ EXPOSE 80
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
 
-# Sadece .csproj dosyasını kopyala
-COPY Library/Library.csproj ./Library/
+# Önce sadece .csproj dosyasını kopyala (dependency restore için)
+COPY ["Library/Library.csproj", "Library/"]
 
-# Restore
+# Restore işlemini yap
+RUN dotnet restore "Library/Library.csproj"
+
+# Şimdi tüm kaynak kodları kopyala
+COPY Library/ Library/
+
+# Working directory'yi değiştir ve build yap
 WORKDIR /src/Library
-RUN dotnet restore Library.csproj
+RUN dotnet build "Library.csproj" -c Release -o /app/build
 
-# Geri kalan kaynak dosyaları kopyala
-COPY Library/. .
-
-# Build
-RUN dotnet build Library.csproj -c Release -o /app/build
-
-# Publish
+# Publish aşaması
 FROM build AS publish
-RUN dotnet publish Library.csproj -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "Library.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 # Final image
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-
 ENTRYPOINT ["dotnet", "Library.dll"]
