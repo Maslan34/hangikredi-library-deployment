@@ -1,4 +1,53 @@
-bin/
-obj/
-.vscode/
+# Build artifacts
+**/bin/
+**/obj/
+**/out/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+
+# Temporary files
+**/temp/
+**/tmp/
+
+# Logs
+**/logs/
+**/*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Git
 .git/
+.gitignore
+.gitattributes
+
+# Docker
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# IDE
+.vscode/
+.idea/
+
+# Test results
+TestResults/
+**/*.trx
+**/*.coverage
+
+# Package files
+**/*.nupkg
+**/*.snupkg
+
+# Azure
+.azure/
+
+# Node modules (if any)
+**/node_modules/
+
+# Yarn
+yarn-error.log
